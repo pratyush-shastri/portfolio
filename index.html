@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional developer portfolio. Showcase of custom projects, experience, technical skills, and interactive themes.">
+  <title>Pratyush R Shastri | Portfolio</title>
+  
+  <!-- FontAwesome Icons Import -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Dual Cursor Tracking -->
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-outline"></div>
+
+  <!-- Interactive Canvas Particle Backdrop -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Ambient Glow Backdrops -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Header Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon"></span>prath.dev
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="#contact" class="btn-glass btn-primary">Hire Me</a>
+        <button class="menu-btn" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Showcase Content -->
+  <main>
+    
+    <!-- Hero Showcase Section -->
+    <section id="home" class="hero">
+      <div class="hero-content reveal-el">
+        <span class="hero-subtitle" id="hero-subtitle-label">Welcome to my space</span>
+        <h1 class="hero-title" id="hero-title">Creative <span>Developer</span></h1>
+        <p class="hero-desc" id="hero-desc">Crafting responsive web designs and custom application engines.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn-glass btn-primary">View My Work <i class="fas fa-arrow-right" style="font-size:12px;"></i></a>
+          <a href="#contact" class="btn-glass">Let's Connect</a>
+        </div>
+      </div>
+      
+      <div class="hero-img-container reveal-el">
+        <!-- 3D Interactive Parallax Card -->
+        <div class="portrait-card" id="hero-portrait-card">
+          <div class="portrait-glow"></div>
+          <div class="portrait-inner">
+            <img id="hero-avatar" src="" alt="Developer Portrait">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Interactive Resume Section -->
+    <section id="about" class="about">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="about-grid">
+        
+        <!-- Bio Card (Left Column) -->
+        <div class="about-left reveal-el">
+          <div class="about-card">
+            <p class="about-bio" id="about-bio-text">Loading bio...</p>
+            <div class="about-tabs">
+              <button class="tab-btn active" data-tab="experience">Experience</button>
+              <button class="tab-btn" data-tab="education">Education</button>
+              <button class="tab-btn" data-tab="skills">Skills</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Detail Panels (Right Column) -->
+        <div class="about-right reveal-el">
+          
+          <!-- Experience Tab -->
+          <div id="experience-tab" class="tab-content active">
+            <div class="timeline" id="experience-timeline">
+              <!-- JS Injected Timeline items -->
+            </div>
+          </div>
+
+          <!-- Education Tab -->
+          <div id="education-tab" class="tab-content">
+            <div class="timeline" id="education-timeline">
+              <!-- JS Injected Timeline items -->
+            </div>
+          </div>
+
+          <!-- Skills Tab -->
+          <div id="skills-tab" class="tab-content">
+            <div class="skills-container" id="skills-list-container">
+              <!-- JS Injected Skills Progress bars -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Showcase Section -->
+    <section id="projects" class="projects">
+      <div class="projects-header">
+        <div>
+          <h2 class="section-title">Featured <span>Projects</span></h2>
+        </div>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="All">All</button>
+          <button class="filter-btn" data-filter="Coming Soon">Coming Soon</button>
+        </div>
+      </div>
+      
+      <div class="projects-grid" id="projects-grid-container">
+        <!-- JS Injected Project Cards -->
+      </div>
+    </section>
+
+    <!-- Contact & Form Section -->
+    <section id="contact" class="contact">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <div class="contact-container">
+        
+        <!-- Contact Details Left Card -->
+        <div class="contact-info-card reveal-el">
+          <div class="contact-details">
+            <h3 style="font-family:'Outfit'; font-size:24px; margin-bottom:16px;">Let's discuss something great!</h3>
+            
+            <div class="contact-detail-item">
+              <div class="contact-icon-box"><i class="far fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email Me</span>
+                <div class="contact-value"><a id="contact-email-link" href="" style="color:inherit;"><span id="contact-email-value">Loading...</span></a></div>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-label">Location</span>
+                <div class="contact-value">Bengaluru, India</div>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-icon-box"><i class="fas fa-graduation-cap"></i></div>
+              <div>
+                <span class="contact-label">Academic Status</span>
+                <div class="contact-value">CS Student / Fresher</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links-wrapper">
+            <span class="contact-label" style="display:block; margin-bottom:12px;">Find me on</span>
+            <div class="social-links">
+              <!-- JS Injected Social buttons -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Glassmorphic Form Card -->
+        <div class="contact-form-card reveal-el">
+          <!-- Submission status overlay -->
+          <div class="form-overlay" id="contact-form-overlay"></div>
+          
+          <form id="contact-form">
+            <div class="form-group">
+              <input type="text" id="form-name" class="form-input" placeholder=" " required minlength="3">
+              <label for="form-name" class="form-label">Your Name</label>
+              <div class="form-input-focus-line"></div>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="form-email" class="form-input" placeholder=" " required>
+              <label for="form-email" class="form-label">Email Address</label>
+              <div class="form-input-focus-line"></div>
+            </div>
+
+            <div class="form-group">
+              <input type="text" id="form-subject" class="form-input" placeholder=" " required minlength="3">
+              <label for="form-subject" class="form-label">Subject</label>
+              <div class="form-input-focus-line"></div>
+            </div>
+
+            <div class="form-group">
+              <textarea id="form-message" class="form-input" placeholder=" " required style="min-height: 100px; resize: none;"></textarea>
+              <label for="form-message" class="form-label">Message Details</label>
+              <div class="form-input-focus-line"></div>
+            </div>
+
+            <button type="submit" class="btn-glass btn-primary" style="width: 100%; justify-content: center;">
+              Send Message <i class="far fa-paper-plane" style="font-size:12px;"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-copyright" id="footer-copyright-text">
+        &copy; 2026 Developer. All rights reserved.
+      </div>
+      <div class="footer-editor-trigger" id="footer-editor-trigger">
+        <i class="fas fa-sliders-h"></i> Design Editor
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts Loading (config first, then core engine, then panel layout customizer) -->
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+  <script src="editor.js"></script>
+  
+  <script>
+    // Subtle 3D Tilt animation on Hero image
+    const card = document.getElementById('hero-portrait-card');
+    if (card) {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left - (rect.width / 2);
+        const y = e.clientY - rect.top - (rect.height / 2);
+        
+        // Convert to rotations
+        const rotX = (y / (rect.height / 2)) * -12; // cap at 12deg
+        const rotY = (x / (rect.width / 2)) * 12;
+        
+        card.style.transform = `rotateX(${rotX}deg) rotateY(${rotY}deg) scale3d(1.02, 1.02, 1.02)`;
+      });
+      
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
+      });
+    }
+  </script>
+</body>
+</html>
